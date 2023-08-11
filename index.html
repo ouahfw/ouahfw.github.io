@@ -181,7 +181,7 @@
             <div class="post-meta">
                 <a><span class="icon-calendar"></span>2023-08-11</a>
                 
-                    <a><span class="icon-pencil"></span>298 words</a>
+                    <a><span class="icon-pencil"></span>453 words</a>
                 
                 
                     <a><span class="icon-clock"></span>1 min</a>
@@ -191,14 +191,12 @@
             <article class="post-article">
                 
                     mysql常用语句Field 列名  Type 数据类型  
+select database() ; 查看当前数据库
 insert into table name(field1,field2……) Values; 插入语句
 select * from table_name; 查询语句
-show tables;  查看当前数据库所有的数据表名称
-use mysql_name; 切换到该数据库
-select @@version; 查看mysql版本
-select @@basedir; 查看mysql所在位置
-select column name,column name,fromtable_name; 查询语句
-mysql (-h 127.0.0.1) 
+create database [ if not exists ] 数据库名 [ default charset 字符集 ] [ collate 排序规则 ] ; 创建数据库
+DELETE FROM 表名 [ WHERE 条件 ] ;删除数据
+drop database [ if exists ] 数据库名 ; 
                 
             </article>
         </div>
@@ -716,7 +714,7 @@ fofa一些常见语法主要分为检索字段和
             
                 <div>
                     <span class="icon-brush"></span>
-                    8.6k
+                    8.8k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     00:36
